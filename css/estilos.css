@@ -1,8 +1,11 @@
 body {
     background-color: #e3f6f5;
-    font: normal 1rem 'Montserrat', sans-serif;
+    font: normal 1.1rem 'Montserrat', sans-serif;
     padding-top: 7.5rem;
+    min-height: 100vh;
 }
+
+/*Header*/
 
 .navbar-brand {
     margin-left: 20px;
@@ -12,67 +15,6 @@ body {
     margin-right: 20px;
     
 }
-/*** Animaciones ***/
-.fade-in-top {
-	-webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-@-webkit-keyframes fade-in-top {
-    0% {
-      -webkit-transform: translateY(-50px);
-              transform: translateY(-50px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  @keyframes fade-in-top {
-    0% {
-      -webkit-transform: translateY(-50px);
-              transform: translateY(-50px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-  .fade-in-left {
-	-webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-@-webkit-keyframes fade-in-left {
-    0% {
-      -webkit-transform: translateX(-50px);
-              transform: translateX(-50px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  @keyframes fade-in-left {
-    0% {
-      -webkit-transform: translateX(-50px);
-              transform: translateX(-50px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  /**********/
 
 .nav-link {
     padding: 20px 10px;
@@ -161,12 +103,28 @@ body {
     transform: scaleY(1);
   }
 
-.carousel {
-    width: 90%;
-    height: 50%;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+  /***Homepage***/
+
+.carousel-caption h1 {
+    text-transform: uppercase;
+}
+
+.cards-home {
+    margin-top: 30px;
+}
+
+.card-btn {
+    background-color: #bae8e8;
+    color: #272343;
+    border: none;
+}
+
+.card-btn:hover {
+    background-color: #272343;
+}
+
+.subtitulo-home {
+    padding: 30px 50px;
 }
 
 
@@ -174,20 +132,20 @@ body {
     margin-bottom: 70px;
 }
 
-.col {
-    padding: 0;
-}
-
-.img-principal {
-    padding: 0;
+.info-finca, 
+.info-cafe-jardin,
+.info-cabanas,
+.info-paquetes {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .celda-principal {
     padding: 0 50px;
-    background-color: #272343;
-    color: #bae8e8;
+    color: #272343;
     line-height: 1.5;
-    height: 442px;
+    height: 350px;
 }
 
 .celda-principal-cafe,
@@ -195,11 +153,7 @@ body {
     padding: 0 70px;
 }
 
-.link-cafe-jardin {
-    margin-top: 20px;
-}
-
-.titulo {
+.titulo-celda {
     margin: 50px 0 20px;
 }
 
@@ -207,12 +161,14 @@ body {
     color: #272343;
     font-size: 35px;
     padding: 50px 50px 20px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .info-intro {
     color: #272343;
     padding: 0 50px;
-    line-height: 1.5;
+    line-height: 1.7;
     margin: 0;
 }
 
@@ -220,52 +176,17 @@ body {
     margin: 60px 0;
 }
 
-.info-celda {
-    align-self: center;
-    padding: 70px;
-    background-color: #272343;
-    height: 250px;
+.portada-cafe-jardin {
+    max-width: 100%;
+    height: auto;
 }
 
-.info-celda h1 {
-    color: #bae8e8;
-    font-size: 35px;
-    padding: 20px 0 30px 0;
+.row-cafe-jardin {
+    margin-top: 50px;
 }
 
-.info-celda p {
-    color: #bae8e8;
-    line-height: 1.5;
-}
-
-.info-celda a {
-    color: #272343;
-    background-color: #bae8e8;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px;
-    display: inline-block;
-    margin-top: 12px;
-}
-
-.info-celda a:hover {
-    background-color: #edffea;
-}
-/*
-.row-cafe-jardin .col-carousel {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-
-.grid-cafe-jardin {
-    
-}
-*/
-.grid-cafe-jardin .carousel-item {
-    padding: 0;
+.grid-cafe-jardin .col-carousel {
+   padding: 0;
 }
 
 .celda-cafe-jardin {
@@ -299,14 +220,13 @@ body {
     margin: 50px 60px 20px;
 }
 
-.cabana-vispera-container {
-    display: flex;
-    align-items: center;
-    padding: 50px 0 60px 0;
+.img-principal,
+.celda-img-cabana, 
+.celda-img-paquete {
+    padding: 0;
 }
 
 .info-cabana {
-    
     padding: 50px;
     background-color: #272343;
     height: 400px;
@@ -353,8 +273,6 @@ body {
     list-style-type: circle;
 }
 
-
-
 .label {
     padding-top: 10px;
 }
@@ -400,6 +318,8 @@ body {
 footer {
     background-color: #bae8e8;
     height: 270px;
+    position: absolute;
+    width: 100%;
 }
 
 .titulo-footer {
@@ -411,43 +331,15 @@ footer {
     text-transform: uppercase;
 }
 
-.col-sm {
+.footer-telf,
+.footer-ubicacion,
+.footer-email,
+.footer-redes {
     text-align: center;
-}
-
-.info-contacto {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-top: 50px;
-}
-
-.telefonos, 
-.ubicacion, 
-.email {
-    
-    color: #272343;
-    font-size: 20px;
-}
-
-.samaipata {
-    text-align: center;
-}
-
-.redes-sociales {
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-    padding-top: 40px;
-    width: 300px;
 }
 
 .row-footer {
     margin-top: 40px;
-}
-
-.email-2 {
-    margin-top: 10px;
 }
 
 .fab {
@@ -525,4 +417,91 @@ footer {
   .home-icon {
       padding-right: 10px;
   }
+
+  @media (max-width: 989px) {
+      .img-herbolario {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .info-finca {
+          width: 90%;
+      }
+
+      .cards-home {
+          margin-left: auto;
+          margin-right: auto;
+          width: 70%;
+      }
+
+      .cards-home .card {
+          margin-bottom: 30px;
+      }
+
+      .info-intro {
+          font-size: 1.1rem;
+      }
+  }
+
+  /*** Animaciones ***/
+.fade-in-top {
+	-webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .fade-in-left {
+	-webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in-left {
+    0% {
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-left {
+    0% {
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  /**********/
 
