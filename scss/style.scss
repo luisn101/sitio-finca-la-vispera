@@ -1,0 +1,35 @@
+$fuente-principal: normal 1.1rem 'Montserrat', sans-serif;
+$fuente-titulo: normal 2.188rem 'Montserrat', sans-serif;
+$fuente-subtitulo: normal 1.875rem 'Montserrat', sans-serif;
+
+$fuente-1: 2.188rem;
+
+$azul-oscuro: #272343;
+$celeste-oscuro: #bae8e8;
+$celeste-claro: #e3f6f5;
+$blanco: #edffea;
+
+body {
+    background-color: $celeste-claro;
+    font: $fuente-principal;
+}
+
+.titulo-intro {
+    font: $fuente-titulo;
+}
+
+.info-cabana {
+    ul {
+        color: $blanco;
+    }
+}
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.carousel-homepage {
+    @include sizes (100%, 100%);
+}
+

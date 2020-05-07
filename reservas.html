@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <header>
@@ -45,27 +46,40 @@
         </header>
         <main class="fade-in-left">
             <h1 class="titulo-intro">Envíenos su consulta o reserva</h1>
-            <div class="container">
-              <div class="row ">
-                <div class="col">
+            <div class="container-fluid container-form">
+              
+                
                   <form action="" class="contacto-form">
-                    <div class="label"><label>Nombre</label></div>
-                    <input class="input-text" type="text">
-                    <div class="label"><label>Teléfono</label></div>
-                    <input class="input-text" type="tel">
-                    <div class="label"><label>Email</label></div>
-                    <input class="input-text" type="email">
+                    <div class="row">
+                      <div class="col">
+                        <div class="label"><label>Nombre</label></div>
+                        <input class="input-text" type="text">
+                      </div>
+                      
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="label"><label>Teléfono</label></div>
+                        <input class="input-tel" type="tel">
+                        
+                      </div>
+                      <div class="col-lg-7 email-form">
+                        <div class="label"><label>Email</label></div>
+                        <input class="input-email" type="email">
+                      </div>
+                      
+                    </div>
+                    
                     <div class="label"><label>Su mensaje</label></div>
                     <div><textarea class="textarea" name="mensaje" id="" cols="20" rows="5"></textarea></div>
                     <input class="btn-enviar" type="submit">
+
                 </form>
-                </div>
-                <div class="col">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4507.704418763017!2d-63.879821373745465!3d-18.18635839861308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f0437136275f23%3A0x9958644877bbc25d!2zIkZpbmNhIExhIFbDrXNwZXJhIg!5e0!3m2!1ses-419!2sbo!4v1587397411981!5m2!1ses-419!2sbo" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-              </div>
+                
             </div>
             
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4507.704418763017!2d-63.879821373745465!3d-18.18635839861308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f0437136275f23%3A0x9958644877bbc25d!2zIkZpbmNhIExhIFbDrXNwZXJhIg!5e0!3m2!1ses-419!2sbo!4v1587397411981!5m2!1ses-419!2sbo" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </main>
         <footer>
           <h1 class="titulo-footer">Finca La Víspera</h1>

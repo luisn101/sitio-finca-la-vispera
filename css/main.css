@@ -1,0 +1,13 @@
+body {
+  background-color: #e3f6f5;
+  font: normal 1.1rem "Montserrat", sans-serif; }
+
+.titulo-intro {
+  font: normal 2.188rem "Montserrat", sans-serif; }
+
+.info-cabana ul {
+  color: #edffea; }
+
+.carousel-homepage {
+  height: 100%;
+  width: 100%; }
