@@ -48,10 +48,12 @@ body {
     display: inline-block;
     padding: 10px 20px;
     text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 1px solid #272343;
     
 }
 
-/* Transición barrida hacia arriba */
+  /* Animacion menu principal */
 .enlaces-menu li a {
     display: inline-block;
     color: #272343;
@@ -62,55 +64,45 @@ body {
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    overflow: hidden;
   }
 
   .enlaces-menu li a:before {
-    border-radius: 3px;
     content: "";
     position: absolute;
     z-index: -1;
+    left: 51%;
+    right: 51%;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background: #272343;
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
+    height: 1px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
-
-  .enlaces-menu li a:hover, 
-  .enlaces-menu li a:focus, 
-  .enlaces-menu li a:active {
-    color: #e3f6f5;
-  }
-
   .enlaces-menu li a:hover:before, 
   .enlaces-menu li a:focus:before, 
   .enlaces-menu li a:active:before {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
+    left: 0;
+    right: 0;
   }
 
   /***Homepage***/
 
 .carousel-caption h1 {
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .cards-home {
     margin-top: 30px;
+}
+
+.card-body {
+    height: 220px;
 }
 
 .card-btn {
@@ -121,6 +113,14 @@ body {
 
 .card-btn:hover {
     background-color: #272343;
+}
+
+.card-btn-cabanas {
+    margin-top: 40px;
+}
+
+.card-btn-cafe-jardin {
+    margin-top: 20px;
 }
 
 .subtitulo-home {
@@ -183,6 +183,8 @@ body {
     height: auto;
 }
 
+/* Café Jardin */
+
 .row-cafe-jardin {
     margin-top: 50px;
 }
@@ -218,8 +220,10 @@ body {
     margin: 20px 50px 30px;
 }
 
+/* Alojamiento */
+
 .grid-cabanas, .grid-paquetes {
-    margin: 50px 60px 20px;
+    margin: 50px auto 20px auto;
 }
 
 .img-principal,
@@ -240,7 +244,8 @@ body {
     line-height: 1.5;
 }
 
-.info-cabana ul li:before, .info-paquete ul li:before {
+.info-cabana ul li:before, 
+.info-paquete ul li:before {
     content: '\2013';
     position: absolute;
     margin-left: -20px;
@@ -251,6 +256,16 @@ body {
     color: #edffea;
     line-height: 1.5;  
 }
+
+.galeria-container {
+    margin-top: 20px;
+}
+
+.foto-galeria {
+    padding: 10px;
+}
+
+/* Paquetes Vacacionales */
 
 .info-paquete {
     color: #e3f6f5;
@@ -271,16 +286,14 @@ body {
     
     color: #272343;
     line-height: 2;
-    padding: 0 250px 0 100px;
+    padding: 0 150px 0 100px;
     list-style-type: circle;
 }
 
+/* Reservas y Consultas */
+
 .container-form {
     width: 70%;
-}
-
-.email-form {
-    
 }
 
 .label {
@@ -344,16 +357,50 @@ body {
     transform: scale(2);
   }
 
+  .row-reservas {
+      padding-bottom: 70px;
+  }
+
+  .titulo-reservas {
+      padding: 60px 0 50px;
+  }
+
+  .titulo-consultas {
+      padding: 25px 0;
+  }
+
+  .fecha-container {
+      position: relative;
+  }
+
+  .input-fecha {
+      height: 50px;
+      padding: 0 15px;
+      width: 270px;
+  }
+
+  .btn-reserva {
+    width: 275px;
+    color: #272343;
+    background-color: #bae8e8;
+    border: 1px solid #272343;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.btn-reserva:hover {
+    background-color: #272343;
+}
+
 
 footer {
-    background-color: #bae8e8;
+    background-image: linear-gradient(to top, #fff, #bae8e8);
     height: 270px;
     position: absolute;
     width: 100%;
 }
 
 .titulo-footer {
-    
     text-align: center;
     padding: 30px 0;
     color: #272343;
@@ -372,12 +419,19 @@ footer {
     margin-top: 40px;
 }
 
-.fab {
+.redes-icon {
     margin: 0 15px;
+    color: #6f6e72;
+    font-size: 2rem;
+}
+
+.redes-icon:hover {
+    color: #272343;
+    transition: 0.3s ease;
 }
 
 /* Radial Out */
-.hvr-radial-out {
+.enlace-reserva {
     color: #272343;
     padding: 10px;
     border: 1px solid #bae8e8;
@@ -395,7 +449,7 @@ footer {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
   }
-  .hvr-radial-out:before {
+  .enlace-reserva:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -414,22 +468,27 @@ footer {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
-  .hvr-radial-out:hover, 
-  .hvr-radial-out:focus, 
-  .hvr-radial-out:active {
+  .enlace-reserva:hover, 
+  .enlace-reserva:focus, 
+  .enlace-reserva:active {
     color: #bae8e8;
     text-decoration: none;
   }
-  .hvr-radial-out:hover:before, 
-  .hvr-radial-out:focus:before, 
-  .hvr-radial-out:active:before {
+  .enlace-reserva:hover:before, 
+  .enlace-reserva:focus:before, 
+  .enlace-reserva:active:before {
     -webkit-transform: scale(2);
     transform: scale(2);
   }
 
-  .not-found-page {
+  .sticky-class {
+      height: 700px;
+  }
+
+  #not-found-page {
       text-align: center;
-      padding-bottom: 50px;
+      margin-bottom: 100px;
+      
   }
 
   .display-4 {
@@ -448,42 +507,201 @@ footer {
       padding-right: 10px;
   }
 
-  @media (max-width: 989px) {
-      .img-herbolario {
-        max-width: 100%;
-        height: auto;
-      }
-
-      .info-finca {
-          width: 90%;
-      }
-
-      .cards-home {
-          margin-left: auto;
-          margin-right: auto;
-          width: 70%;
-      }
-
-      .cards-home .card {
-          margin-bottom: 30px;
-      }
-
-      .info-intro {
-          font-size: 1.1rem;
-      }
-
-      .container-form {
-          width: 90%;
-      }
-
-      .input-text,
-      .input-tel,
-      .input-email,
-      .textarea {
-          width: 95%;
-      }
-
+  #sticky-footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 270px;
   }
+
+  /* Media Queries */
+
+@media (max-width: 989px) {
+    .enlaces-menu li a {
+        display: inline-block;
+        color: #272343;
+        text-transform: uppercase;
+        vertical-align: middle;
+        padding: 10px 20px;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+      }
+    
+      .enlaces-menu li a:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 51%;
+        right: 51%;
+        top: 0;
+        background: #272343;
+        height: 1px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+      }
+      .enlaces-menu li a:hover:before, 
+      .enlaces-menu li a:focus:before, 
+      .enlaces-menu li a:active:before {
+        left: 40%;
+        right: 40%;
+      }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-item {
+        margin-top: 20px;
+    }
+
+    .nav-link {
+        width: 100%;
+    }
+
+    .enlaces-menu li span {
+        border: none;
+        font-weight: 500;
+    }
+
+    .img-herbolario {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .carousel-caption h1 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: -25px;
+    }
+
+    .titulo-intro {
+        font-size: 25px;
+    }
+
+    .subtitulo-home {
+        font-size: 25px;
+    }
+
+    .info-finca {
+        width: 100%;
+    }
+
+    .cards-home {
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        text-align: center;
+    }
+
+    .cards-home .card {
+        margin-bottom: 30px;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+
+    .info-intro {
+        font-size: 1rem;
+        width: 95%;
+    }
+
+    .celda-principal {
+        margin-bottom: 30px;
+    }
+
+    .titulo-celda {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .celda-mirador {
+        height: 200px;
+    }
+
+    .info-cafe-jardin,
+    .info-cabanas,
+    .info-paquetes {
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .celda-cafe-jardin {
+        height: 300px;
+        padding: 30px 60px 60px;
+    }
+
+    .titulo-cafe-jardin {
+        font-size: 25px;
+    }
+
+    .container-enlace {
+        text-align: center;
+    }
+
+    .enlace-reserva {
+        width: 150px;
+    }
+
+    .grid-cabanas {
+        width: 92%;
+        margin-left: 25px;
+    }
+
+    .info-mirador {
+        height: 500px;
+    }
+
+    .subtitulo {
+        font-size: 25px;
+    }
+
+    .grid-paquetes {
+        width: 95%;
+    }
+
+    .horarios {
+        padding: 0 100px 0;
+    }
+
+    .container-form {
+        width: 90%;
+    }
+
+    .col-reserva {
+        margin-bottom: 30px;
+    }
+
+    .input-text,
+    .input-tel,
+    .input-email,
+    .textarea,
+    .input-fecha,
+    .btn-reserva {
+        width: 95%;
+    }
+
+    .display-4 {
+        font-size: 25px;
+    }
+
+    footer {
+        height: 320px;
+    }
+
+    .footer-telf, .footer-ubicacion {
+        margin-bottom: 10px;
+    }
+
+}
 
   /*** Animaciones ***/
 .fade-in-top {

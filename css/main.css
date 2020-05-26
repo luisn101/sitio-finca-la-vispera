@@ -1,5 +1,5 @@
 body {
-  background-color: #e3f6f5;
+  background-image: linear-gradient(to top, #fff, #bae8e8);
   font: normal 1.1rem "Montserrat", sans-serif; }
 
 .titulo-intro {
@@ -11,3 +11,76 @@ body {
 .carousel-homepage {
   height: 100%;
   width: 100%; }
+
+.row-cafe-jardin {
+  margin-top: 50px; }
+
+.celda-cafe-jardin {
+  background-color: #272343;
+  color: #bae8e8;
+  line-height: 1.5;
+  height: 400px;
+  padding: 30px; }
+
+.subtitulo {
+  color: #272343;
+  font-size: 30px; }
+
+.info-bold {
+  font-weight: bold; }
+
+.enlace-reserva {
+  color: #edffea;
+  background-color: #272343;
+  padding: 15px;
+  margin: 20px 50px 30px; }
+
+.grid-cabanas, .grid-paquetes {
+  margin: 50px 60px 20px; }
+
+.info-cabana {
+  padding: 50px;
+  background-color: #272343;
+  height: 400px;
+  width: 550px; }
+
+.info-cabana ul {
+  color: #edffea;
+  line-height: 1.5; }
+
+.info-cabana ul li:before {
+  content: '\2013';
+  position: absolute;
+  margin-left: -20px; }
+
+.info-capacidad-precio {
+  color: #edffea;
+  line-height: 1.5; }
+
+.label {
+  padding-top: 10px; }
+
+.input-text {
+  height: 50px;
+  width: 915px;
+  margin-bottom: 20px; }
+
+.input-tel {
+  width: 350px; }
+
+.input-email {
+  width: 521px; }
+
+.input-tel,
+.input-email {
+  height: 50px;
+  margin-bottom: 20px; }
+
+.btn-reserva {
+  width: 275px;
+  color: #272343;
+  background-color: #bae8e8;
+  border: 1px solid #272343; }
+
+.btn-reserva:hover {
+  background-color: #272343; }

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html class="sticky-class">
     <head>
         <meta charset="utf-8">
-        <title>Finca La Víspera</title>
+        <title>404 Página no encontrada</title>
 		<meta name="description" content=" Página personalizada 404">
 		<meta name="keywords" content="Palabra Clave 1, Palabra Clave 2">
         <meta name="author" content="Luis Navia">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/2c24c8ae43.js" crossorigin="anonymous"></script>
@@ -13,9 +15,9 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="css/estilos.css">
     </head>
-    <body>
+    <body class="sticky-class">
         <header>
-            <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #bae8e8;">
+            <nav class="navbar fixed-top navbar-expand-lg" style="background-image: linear-gradient(to bottom, #fff, #bae8e8);">
                 <a class="navbar-brand" href="index.html"><img src="images/logo-sitio.png" alt="Logo de Finca La Víspera"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="line"></span> 
@@ -45,38 +47,38 @@
         </header>
         
        <main>
-           <div class="not-found-page">
+           <div id="not-found-page">
             <h1 class="display-4">404 Página no encontrada</h1>
             <a class="home-link" href="index.html"><i class="fas fa-home home-icon"></i>Ir a Home</a>
            </div>
         
         </main>
-        <footer>
-            <h1 class="titulo-footer">Finca La Víspera</h1>
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-sm">
-                  <div>+591 3 9446362</div>
-                  <div>+591 72123636</div>
-                </div>
-                <div class="col-sm">
-                  <div>Avenida Hermógenes Pérez, 2400</div>
-                  <div>Samaipata - Bolivia</div>
-                </div>
-                <div class="col-sm">
-                  <div class="email-2">lavispera@gmail.com</div>
-                </div>
+        <footer id="sticky-footer" class="py-4">
+          <h1 class="titulo-footer">Finca La Víspera</h1>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm footer-telf">
+                <div><i class="fas fa-phone"></i> +591 3 9446362</div>
+                <div><i class="fab fa-whatsapp"></i>+591 72123636</div>
+              </div>
+              <div class="col-sm footer-ubicacion">
+                <div><i class="fas fa-map-marker-alt"></i> Avenida Hermógenes Pérez, 2400</div>
+                <div>Samaipata - Bolivia</div>
+              </div>
+              <div class="col-sm footer-email">
+                <div class="email-2"><i class="far fa-envelope"></i> lavispera@gmail.com</div>
               </div>
             </div>
-            <div class="container">
-              <div class="row row-footer">
-                <div class="col-sm">
-                  <a href=""><i class="fab fa-facebook" style="color: #272343; font-size: 2rem;"></i></a>
-                  <a href=""><i class="fab fa-instagram" style="color: #272343; font-size: 2rem;"></i></a>
-                </div>
+          </div>
+          <div class="container">
+            <div class="row row-footer">
+              <div class="col-sm footer-redes">
+                <a href="https://www.facebook.com/FincaLaVispera" target="_blank"><i class="fab fa-facebook redes-icon"></i></a>
+                <a href="https://www.instagram.com/fincalavispera" target="_blank"><i class="fab fa-instagram redes-icon"></i></a>
               </div>
             </div>
-        </footer>
+          </div>
+      </footer>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

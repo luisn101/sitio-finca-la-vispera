@@ -3,14 +3,28 @@ $fuente-titulo: normal 2.188rem 'Montserrat', sans-serif;
 $fuente-subtitulo: normal 1.875rem 'Montserrat', sans-serif;
 
 $fuente-1: 2.188rem;
+$fuente-2: 30px;
+$fuente-negrita: bold;
 
 $azul-oscuro: #272343;
 $celeste-oscuro: #bae8e8;
 $celeste-claro: #e3f6f5;
 $blanco: #edffea;
+$color-degradado: linear-gradient(to top, #fff, #bae8e8);
+
+$margen-superior: 100px;
+$entre-linea: 3;
+$altura: 700px;
+$ancho: 700px;
+$relleno_1: 10px;
+$relleno_2: 10px 10px 10px;
+$margen-der-izq: 10px;
+$margen-inferior: 10px;
+$margen-total_1: 20px 50px 30px;
+$margen-total_2: 50px 60px 20px;
 
 body {
-    background-color: $celeste-claro;
+    background-image: $color-degradado;
     font: $fuente-principal;
 }
 
@@ -32,4 +46,105 @@ body {
 .carousel-homepage {
     @include sizes (100%, 100%);
 }
+
+.row-cafe-jardin {
+    margin-top: $margen-superior/2; 
+}
+
+.celda-cafe-jardin {
+    background-color: $azul-oscuro;
+    color: $celeste-oscuro;
+    line-height: $entre-linea/2;
+    height: ($altura/2)+50;
+    padding: $relleno_1+20;
+}
+
+.subtitulo {
+    color: $azul-oscuro;
+    font-size: $fuente-2;
+}
+
+.info-bold {
+    font-weight: $fuente-negrita;
+}
+
+.enlace-reserva {
+    color: $blanco;
+    background-color: $azul-oscuro;
+    padding: $relleno_1+5;
+    margin: $margen-total_1;
+}
+
+.grid-cabanas, .grid-paquetes {
+    margin: $margen-total_2;
+}
+
+.info-cabana {
+    padding: $relleno_1+40;
+    background-color: $azul-oscuro;
+    height: ($altura/2)+50;
+    width: ($ancho/2)+200;
+}
+
+.info-cabana {
+    ul {
+        color: $blanco;
+        line-height: $entre-linea/2;
+    }
+}
+
+.info-cabana {
+    ul {
+        li:before {
+            content: '\2013';
+            position: absolute;
+            margin-left: -20px;
+        }
+    }
+}
+
+.info-capacidad-precio {
+    color: $blanco;
+    line-height: $entre-linea/2;
+}
+
+.label {
+    padding-top: $relleno_1;
+}
+
+.input-text {
+    height: ($altura)-650;
+    width: ($ancho)+215;
+    margin-bottom: $margen-inferior+10;
+}
+
+.input-tel {
+    width: ($ancho)-350;
+}
+
+.input-email {
+    width: ($ancho)-179;
+}
+
+.input-tel, 
+.input-email {
+    height: ($altura)-650;
+    margin-bottom: $margen-inferior+10;
+}
+
+.btn-reserva {
+    width: ($ancho)-425;
+    color: $azul-oscuro;
+    background-color: $celeste-oscuro;
+    border: 1px solid $azul-oscuro;
+}
+
+.btn-reserva:hover {
+    background-color: $azul-oscuro;
+}
+
+
+
+
+
 

@@ -4,19 +4,24 @@
         <meta charset="utf-8">
         <title>Alojamiento</title>
 		    <meta name="description" content="Información sobre las opciones de alojamiento de la finca">
-		    <meta name="keywords" content="Cabana La Vispera, Cabana La Lumbre">
+		    <meta name="keywords" content="Cabana La Lumbre, Cabana El Mirador, Cabana La Sweet">
         <meta name="author" content="Luis Navia">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://kit.fontawesome.com/2c24c8ae43.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/estilos.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/estilos.css">
     </head>
     <body>
         <header>
-            <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #bae8e8;">
+            <nav class="navbar fixed-top navbar-expand-lg" style="background-image: linear-gradient(to bottom, #fff, #bae8e8);">
                 <a class="navbar-brand" href="index.html"><img src="images/logo-sitio.png" alt="Logo de Finca La Víspera"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="line"></span> 
@@ -61,74 +66,132 @@
             </section>
             <section>
               <div class="info-cabanas">
-                <h1 class="subtitulo">Cabaña La Vispera</h1>
+                <h1 class="subtitulo">Cabaña La Lumbre</h1>
+              <p class="info-intro">
+                  Cabaña ecológica diseñada al Feng Shui y dedicada al Elemento Fuego, con una 
+                  atmósfera curativa y construida con materiales naturales y reciclados. Esta 
+                  maravillosa cabaña está construida en adobe, con un nivel técnico 
+                  extraordinario y diseñada integralmente en Samaipata. Se ha preservado al 
+                  mayor posible los beneficios de la naturaleza.
+              </p>
+              <br>
+              <p class="info-intro">“La Lumbre” no es sólo nuestra cabaña más privilegiada, 
+                  sino también presenta la mejor vista de la Finca a los valles de Samaipata.</p>
+              </div>
+              
+                  <div class="container grid-cabanas">
+                    <div class="row align-items-center">
+                      <div class="col-lg-7 celda-img-cabana">
+                        <img class="img-fluid" src="images/alojamiento/cabana-lumbre-3.jpg" alt="imagen-cabana-lumbre">
+                      </div>
+                      <div class="col-lg-5 info-cabana">
+                        <ul>
+                          <ul>
+                            <li>3 habitaciones</li>
+                            <li>2 baños</li>
+                            <li>Living</li>
+                            <li>Estacionamiento privado</li>
+                            <li>Parrilla</li>
+                            <li>Hamacas</li>
+                            <li>Jardín amplio</li>
+                            <li>Las mejores vistas</li>
+                        </ul>
+                      </ul>
+                      <p class="info-capacidad-precio">Capacidad: 7 personas</p>
+                      <p class="info-capacidad-precio">Precio: 1100 Bs. por noche</p>
+                      </div>
+                    </div>
+                    <div class="row justify-content-md-center galeria-container">
+                        <a data-fancybox="gallery" href="images/alojamiento/lumbre-grande-1.jpg" class="foto-galeria"><img src="images/alojamiento/lumbre-pequena-1.jpg"></a>
+                        <a data-fancybox="gallery" href="images/alojamiento/lumbre-grande-2.jpg" class="foto-galeria"><img src="images/alojamiento/lumbre-pequena-2.jpg"></a>
+                        <a data-fancybox="gallery" href="images/alojamiento/lumbre-grande-3.jpg" class="foto-galeria"><img src="images/alojamiento/lumbre-pequena-3.jpg"></a>
+                        <a data-fancybox="gallery" href="images/alojamiento/lumbre-grande-4.jpg" class="foto-galeria"><img src="images/alojamiento/lumbre-pequena-4.jpg"></a>
+                        <a data-fancybox="gallery" href="images/alojamiento/lumbre-grande-5.jpg" class="foto-galeria"><img src="images/alojamiento/lumbre-pequena-5.jpg"></a>
+                        <a data-fancybox="gallery" href="images/alojamiento/lumbre-grande-6.jpg" class="foto-galeria"><img src="images/alojamiento/lumbre-pequena-6.jpg"></a>
+                     </div> 
+                  </div>
+                  
+
+              <div class="info-cabanas">
+                <h1 class="subtitulo">Cabaña El Mirador</h1>
                 <p class="info-intro">
-                    Hermosa cabaña para compartir con los amigos o la familia. Ubicada próxima
-                    a las terrazas, esta cabaña ofrece una vista encantadora, un amplio
-                    corredor para pasar el tiempo conversando o leyendo en las hamacas, rodeado
-                    de la paz que brinda este lugar. 
+                    Una cabaña cómoda que cuenta con un balcón con una gran panorámica al valle
+                    de Samaipata. Silencio natural, el canto de los pájaros y la variedad de
+                    tonos verdes se aprecian desde nuestra hermosa cabaña El Mirador. 
                 </p>
               </div>
                 
                 <div class="container grid-cabanas">
                   <div class="row align-items-center">
-                    <div class="col celda-img-cabana">
-                      <img class="" src="images/alojamiento/cabana-vispera-5.jpg" alt="imagen-cabana-vispera">
+                    <div class="col-lg-7 celda-img-cabana">
+                      <img class="img-fluid" src="images/alojamiento/cabana-mirador.jpg" alt="imagen-cabana-mirador">
                     </div>
-                    <div class="col info-cabana">
+                    <div class="col-lg-5 info-cabana info-mirador">
                       <ul>
-                        <li>3 habitaciones con mezanine (una tiene estufa)</li>
-                        <li>3 baños</li>
-                        <li>Cocina completamente equipada</li>
-                        <li>Parqueo privado próxima a la cabaña</li>
-                        <li>Parrilla</li>
-                        <li>Hamacas</li>
-                        <li>Jardín amplio próxima a la cabaña</li>
-                        <li>Vista encantadora</li>
+                        <li>1 habitación con dos camas simples + baño privado</li>
+                        <li>1 habitación con una cama doble + baño privado</li>
+                        <li>1 habitación con una cama doble y una cama individual + baño</li>
+                        <li>Cocina equipada</li>
+                        <li>Terraza amplia</li>
+                        <li>Hamacas y sillones</li>
+                        <li>Jardín privado</li>
+                        <li>Estacionamiento</li>
                     </ul>
-                    <p class="info-capacidad-precio">Capacidad: 13 personas</p>
-                    <p class="info-capacidad-precio">Precio: 1750 Bs. por noche</p>
+                    <p class="info-capacidad-precio">Capacidad: 7 personas (1050 Bs.)</p>
+                    
                     </div>
+                  </div>
+                  <div class="row justify-content-md-center galeria-container">
+                    <a data-fancybox="gallery" href="images/alojamiento/mirador-grande-1.jpg" class="foto-galeria"><img src="images/alojamiento/mirador-pequena-1.jpg"></a>
+                    <a data-fancybox="gallery" href="images/alojamiento/mirador-grande-2.jpg" class="foto-galeria"><img src="images/alojamiento/mirador-pequena-2.jpg"></a>
+                    <a data-fancybox="gallery" href="images/alojamiento/mirador-grande-3.jpg" class="foto-galeria"><img src="images/alojamiento/mirador-pequena-3.jpg"></a>
+                    <a data-fancybox="gallery" href="images/alojamiento/mirador-grande-4.jpg" class="foto-galeria"><img src="images/alojamiento/mirador-pequena-4.jpg"></a>
+                    <a data-fancybox="gallery" href="images/alojamiento/mirador-grande-5.jpg" class="foto-galeria"><img src="images/alojamiento/mirador-pequena-5.jpg"></a>
                   </div>
                 </div>
                 
-                <div class="info-cabanas">
-                  <h1 class="subtitulo">Cabaña La Lumbre</h1>
-                <p class="info-intro">
-                    Cabaña ecológica diseñada al Feng Shui y dedicada al Elemento Fuego, con una 
-                    atmósfera curativa y construida con materiales naturales y reciclados. Esta 
-                    maravillosa cabaña está construida en adobe, con un nivel técnico 
-                    extraordinario y diseñada integralmente en Samaipata. Se ha preservado al 
-                    mayor posible los beneficios de la naturaleza.
-                </p>
-                <br>
-                <p class="info-intro">“La Lumbre” no es sólo nuestra cabaña más privilegiada, 
-                    sino también presenta la mejor vista de la Finca a los valles de Samaipata.</p>
-                </div>
-                
-                    <div class="container grid-cabanas">
-                      <div class="row align-items-center">
-                        <div class="col celda-img-cabana">
-                          <img class="" src="images/alojamiento/cabana-lumbre-3.jpg" alt="imagen-cabana-vispera">
-                        </div>
-                        <div class="col info-cabana">
-                          <ul>
-                            <ul>
-                              <li>3 habitaciones</li>
-                              <li>2 baños</li>
-                              <li>Living</li>
-                              <li>Estacionamiento privado</li>
-                              <li>Parrilla</li>
-                              <li>Hamacas</li>
-                              <li>Jardín amplio</li>
-                              <li>Las mejores vistas</li>
-                          </ul>
-                        </ul>
-                        <p class="info-capacidad-precio">Capacidad: 7 personas</p>
-                        <p class="info-capacidad-precio">Precio: 1100 Bs. por noche</p>
-                        </div>
-                      </div>
+                    <div class="info-cabanas">
+                      <h1 class="subtitulo">Cabaña La Sweet</h1>
+                    <p class="info-intro">
+                        Cabaña ideal para parejas ya que fue diseñada y planificada para disfrutarla
+                        junto a tu ser querido. Es pequeña, cómoda, y si tienes un hijo no te
+                        preocupes, pues también hay una cama simple para disfrutar de la cabaña
+                        en familia!
+                    </p>
+                    <br>
+                    <p class="info-intro">“La Sweet” tiene la ventaja de estar cerca de nuestro
+                      restaurente Café Jardín, donde podrás ordenar los mejores desayunos, 
+                      disfrutar un almuerzo o cena. ¿Y porqué no unos tragos también?</p>
                     </div>
+                    
+                        <div class="container grid-cabanas">
+                          <div class="row align-items-center">
+                            <div class="col-lg-7 celda-img-cabana">
+                              <img class="img-fluid" src="images/alojamiento/cabana-sweet.jpg" alt="imagen-cabana-sweet">
+                            </div>
+                            <div class="col-lg-5 info-cabana">
+                              <ul>
+                                <ul>
+                                  <li>1 cama matrimonial + 1 cama simple</li>
+                                  <li>1 baño</li>
+                                  <li>Cocina completa</li>
+                                  <li>Sillones y hamacas</li>
+                                  <li>Parrilla</li>
+                                  <li>Terraza y pequeño jardín</li> 
+                              </ul>
+                            </ul>
+                            <p class="info-capacidad-precio">Capacidad: 2-3 personas</p>
+                            <p class="info-capacidad-precio">Precio: 480-570 Bs. por noche</p>
+                            </div>
+                          </div>
+                          <div class="row justify-content-md-center galeria-container">
+                            <a data-fancybox="gallery" href="images/alojamiento/sweet-grande-1.jpg" class="foto-galeria"><img src="images/alojamiento/sweet-pequena-1.jpg"></a>
+                            <a data-fancybox="gallery" href="images/alojamiento/sweet-grande-2.jpg" class="foto-galeria"><img src="images/alojamiento/sweet-pequena-2.jpg"></a>
+                            <a data-fancybox="gallery" href="images/alojamiento/sweet-grande-4.jpg" class="foto-galeria"><img src="images/alojamiento/sweet-pequena-4.jpg"></a>
+                            <a data-fancybox="gallery" href="images/alojamiento/sweet-grande-5.jpg" class="foto-galeria"><img src="images/alojamiento/sweet-pequena-5.jpg"></a>
+                            <a data-fancybox="gallery" href="images/alojamiento/sweet-grande-3.jpg" class="foto-galeria"><img src="images/alojamiento/sweet-pequena-3.jpg"></a>
+                        </div>
+                        </div>
                 
                 
             </section>
@@ -154,8 +217,8 @@
           <div class="container">
             <div class="row row-footer">
               <div class="col-sm footer-redes">
-                <a href=""><i class="fab fa-facebook" style="color: #272343; font-size: 2rem;"></i></a>
-                <a href=""><i class="fab fa-instagram" style="color: #272343; font-size: 2rem;"></i></a>
+                <a href="https://www.facebook.com/FincaLaVispera" target="_blank"><i class="fab fa-facebook redes-icon"></i></a>
+                  <a href="https://www.instagram.com/fincalavispera" target="_blank"><i class="fab fa-instagram redes-icon"></i></a>
               </div>
             </div>
           </div>

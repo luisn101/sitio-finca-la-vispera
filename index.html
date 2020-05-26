@@ -6,17 +6,19 @@
 		    <meta name="description" content="Landing Page con información general del sitio Finca La Víspera">
 		    <meta name="keywords" content="Finca La Vispera, Herbolario, Eco construccion, Parque Nativo, Mirador">
         <meta name="author" content="Luis Navia">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/2c24c8ae43.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/estilos.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/estilos.css">
     </head>
     <body>
         <header>
-            <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #bae8e8;">
+            <nav class="navbar fixed-top navbar-expand-lg" style="background-image: linear-gradient(to bottom, #fff, #bae8e8);">
                 <a class="navbar-brand" href="index.html"><img src="images/logo-sitio.png" alt="Logo de Finca La Víspera"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="line"></span> 
@@ -45,7 +47,7 @@
               </nav>
         </header>
         
-        <div id="carouselExampleControls" class="carousel slide carousel-homepagefade-in-left" data-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-homepage fade-in-left" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="images/home/img-portada-12.jpg" alt="img-portada-1">
@@ -100,7 +102,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Cabañas</h5>
                         <p class="card-text">Servicio de hospedaje con un toque rústico y natural.</p>
-                        <a href="alojamiento.html" class="btn btn-primary card-btn">Ver más +</a>
+                        <a href="alojamiento.html" class="btn btn-primary card-btn card-btn-cabanas">Ver más +</a>
                       </div>
                     </div>
                   </div>
@@ -110,7 +112,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Café Jardín</h5>
                       <p class="card-text">Slow Food, comida hecha al instante con ingredientes frescos y naturales.</p>
-                      <a href="cafe-jardin.html" class="btn btn-primary card-btn">Ver más +</a>
+                      <a href="cafe-jardin.html" class="btn btn-primary card-btn card-btn-cafe-jardin">Ver más +</a>
                     </div>
                   </div>
                  </div>
@@ -121,7 +123,7 @@
                         <h5 class="card-title">Paquetes vacacionales</h5>
                         <p class="card-text">Ofrecemos paquetes de luna de miel para parejas y permacultura
                           para los amantes de la naturaleza.</p>
-                        <a href="paquetes.html" class="btn btn-primary card-btn">Ver más +</a>
+                        <a href="paquetes.html" class="btn btn-primary card-btn card-btn-paquetes">Ver más +</a>
                       </div>
                     </div>
                   </div>
@@ -143,11 +145,11 @@
             <section class="seccion-info-finca">
                 <div class="container-fluid info-finca-grid">
                     <div class="row row-finca">
-                      <div class="col-lg-7 img-principal">
+                      <div class="col-lg-6 img-principal">
                         <img class="img-fluid img-herbolario" src="images/home/herbolario-3.jpg" alt="imagen-herbolario">
                       </div>
                       
-                      <div class="col-lg-5 celda-principal">
+                      <div class="col-lg-6 celda-principal">
                         <h1 class="titulo-celda">El Herbolario</h2>
                             <p class="info">Diariamente secamos hierbas y se las procesa en deliciosas mezclas y 
                                 extractos de hierbas. Además producimos “chutney” de mango & tomate  
@@ -161,7 +163,7 @@
                     
                       <div class="row row-finca">
                         
-                        <div class="col-lg-5 col-md-8 celda-principal">
+                        <div class="col-lg-6 celda-principal">
                             <h1 class="titulo-celda">Eco-Construcción</h2>
                                 <p class="info">
                                     Todas las casas bellamente terminadas están construidas principalmente 
@@ -169,15 +171,15 @@
                                     aplicamos adobe común y superadobe, reciclamos botellas y llantas, 
                                     utilizando diversas técnicas y expresiones artísticas.
                         </div>
-                        <div class="col-lg-7 col-md-8 img-principal">
+                        <div class="col-lg-6 order-first order-md-8 img-principal">
                           <img class="img-fluid" src="images/home/eco-construccion-1.jpeg" alt="imagen-eco-construccion">
-                      </div>
+                        </div>
                       </div>
                       <div class="row row-finca">
-                        <div class="col-lg-7 col-md-8 img-principal">
+                        <div class="col-lg-6 img-principal">
                           <img class="img-fluid" src="images/home/parque-nativo.jpg" alt="imagen-parque-nativo">
                       </div>
-                        <div class="col-lg-5 col-md-8 celda-principal celda-parque-nativo">
+                        <div class="col-lg-6 celda-principal celda-parque-nativo">
                             <h1 class="titulo-celda">Parque Nativo</h2>
                                 <p class="info">
                                     La Finca alberga unas 90 especies de aves; se puede encontrar iguanas, 
@@ -190,13 +192,13 @@
                       </div>
                       <div class="row row-finca">
                         
-                        <div class="col-lg-5 col-md-8 celda-principal">
+                        <div class="col-lg-6 celda-principal celda-mirador">
                             <h1 class="titulo-celda">Mirador El Trono</h2>
                                 <p class="info">El valle de Samaipata ofrece belleza por donde se lo mire. 
                                     Tenemos el lugar perfecto para relajarte, meditar y fotografiar en el 
                                     tope de nuestra finca. Es hermoso.</p>
                         </div>
-                        <div class="col-lg-7 col-md-8 img-principal">
+                        <div class="col-lg-6 order-first order-md-8 img-principal">
                           <img class="img-fluid" src="images/home/mirador-3.jpg" alt="imagen-mirador">
                       </div>
                       </div>
@@ -229,8 +231,8 @@
             <div class="container">
               <div class="row row-footer">
                 <div class="col-sm footer-redes">
-                  <a href=""><i class="fab fa-facebook" style="color: #272343; font-size: 2rem;"></i></a>
-                  <a href=""><i class="fab fa-instagram" style="color: #272343; font-size: 2rem;"></i></a>
+                  <a href="https://www.facebook.com/FincaLaVispera" target="_blank"><i class="fab fa-facebook redes-icon"></i></a>
+                  <a href="https://www.instagram.com/fincalavispera" target="_blank"><i class="fab fa-instagram redes-icon"></i></a>
                 </div>
               </div>
             </div>

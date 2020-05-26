@@ -2,21 +2,23 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Consultas y Reservas</title>
+        <title>Reservas y Consultas</title>
 		    <meta name="description" content="Información de contacto para reservas o consultas">
 		    <meta name="keywords" content="Reservas, Consultas">
         <meta name="author" content="Luis Navia">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://kit.fontawesome.com/2c24c8ae43.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="favicon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/estilos.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/estilos.css">
     </head>
     <body>
         <header>
-            <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #bae8e8;">
+            <nav class="navbar fixed-top navbar-expand-lg" style="background-image: linear-gradient(to bottom, #fff, #bae8e8);">
                 <a class="navbar-brand" href="index.html"><img src="images/logo-sitio.png" alt="Logo de Finca La Víspera"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="line"></span> 
@@ -45,38 +47,50 @@
               </nav>
         </header>
         <main class="fade-in-left">
-            <h1 class="titulo-intro">Envíenos su consulta o reserva</h1>
             <div class="container-fluid container-form">
-              
-                
-                  <form action="" class="contacto-form">
-                    <div class="row">
-                      <div class="col">
-                        <div class="label"><label>Nombre</label></div>
-                        <input class="input-text" type="text">
-                      </div>
-                      
+                <h1 class="titulo-intro titulo-reservas">Reserva online</h1>
+                <form action="" class="reserva-form">
+                  <div class="row row-reservas">
+                    <div class="col-lg-4 col-reserva">
+                      <label for="start">Fecha llegada:</label>
+                      <input class="input-fecha" type="date" value="">
                     </div>
-                    
-                    <div class="row">
-                      <div class="col-lg-5">
-                        <div class="label"><label>Teléfono</label></div>
-                        <input class="input-tel" type="tel">
-                        
-                      </div>
-                      <div class="col-lg-7 email-form">
-                        <div class="label"><label>Email</label></div>
-                        <input class="input-email" type="email">
-                      </div>
-                      
+                    <div class="col-lg-4 col-reserva">
+                      <label for="start">Fecha salida:</label>
+                      <input class="input-fecha" type="date" value="Salida">
                     </div>
-                    
-                    <div class="label"><label>Su mensaje</label></div>
-                    <div><textarea class="textarea" name="mensaje" id="" cols="20" rows="5"></textarea></div>
-                    <input class="btn-enviar" type="submit">
-
+                    <div class="col-lg-4 col-reserva">
+                      <button class="btn btn-outline-dark btn-lg btn-reserva">Reservar ahora</button>
+                    </div>
+                  </div>
                 </form>
-                
+                <h1 class="titulo-intro titulo-consultas">Envíenos su consulta</h1>
+                <form action="" class="contacto-form">
+                  <div class="row">
+                    <div class="col">
+                      <div class="label"><label>Nombre</label></div>
+                      <input class="input-text" type="text">
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="label"><label>Teléfono</label></div>
+                      <input class="input-tel" type="tel">
+                      
+                    </div>
+                    <div class="col-lg-7 email-form">
+                      <div class="label"><label>Email</label></div>
+                      <input class="input-email" type="email">
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="label"><label>Su mensaje</label></div>
+                  <div><textarea class="textarea" name="mensaje" id="" cols="20" rows="5"></textarea></div>
+                  <input class="btn-enviar" type="submit">
+              </form>
             </div>
             
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4507.704418763017!2d-63.879821373745465!3d-18.18635839861308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f0437136275f23%3A0x9958644877bbc25d!2zIkZpbmNhIExhIFbDrXNwZXJhIg!5e0!3m2!1ses-419!2sbo!4v1587397411981!5m2!1ses-419!2sbo" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -101,8 +115,8 @@
           <div class="container">
             <div class="row row-footer">
               <div class="col-sm footer-redes">
-                <a href=""><i class="fab fa-facebook" style="color: #272343; font-size: 2rem;"></i></a>
-                <a href=""><i class="fab fa-instagram" style="color: #272343; font-size: 2rem;"></i></a>
+                <a href="https://www.facebook.com/FincaLaVispera" target="_blank"><i class="fab fa-facebook redes-icon"></i></a>
+                  <a href="https://www.instagram.com/fincalavispera" target="_blank"><i class="fab fa-instagram redes-icon"></i></a>
               </div>
             </div>
           </div>
